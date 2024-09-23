@@ -6,8 +6,6 @@ document.getElementById('login_button')
         const pinNumber = getInputValueById('pin_number_field');
         const mobileNumber = '0' + getInputValueById('mobile_number_field');
 
-        console.log(pinNumber, mobileNumber);
-
         // Bad way of verification.
         if (pinNumber === 1234 && mobileNumber === '018') {
             
