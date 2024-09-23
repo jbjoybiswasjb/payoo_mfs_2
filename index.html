@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+
+        <!-- Meta tags. -->
+        <meta charset="UTF-8">
+        <meta name="description" content="This is a mobile financial service login page">
+        <meta name="keywords"
+            content="mobile finance service, mobile finance, finance service, service, finance, mobile, login, log, in, Payoo MFS login">
+        <meta name="author" content="Payoo">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!-- Page title. -->
+        <title>Payoo MFS Log in page</title>
+
+        <!-- Page icon. -->
+        <link rel="shortcut icon" href="media/images/payoo.png" type="image/x-icon">
+
+        <!-- Tailwind CSS cdn and daisy UI. -->
+        <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+        <script src="https://cdn.tailwindcss.com"></script>
+
+        <!-- Google fonts. Outfit font. -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap" rel="stylesheet">
+
+        <!-- Tailwind customized configuration. -->
+        <script>
+            tailwind.config = {
+                theme: {
+                    extend: {
+
+                        // Colors.
+                        colors: {
+                            white: '#fff',
+                            black: '#000',
+                            heading: 'rgb(8, 8, 8)',
+                            button: 'rgb(8, 116, 242)',
+                            input_field: 'rgb(244, 245, 247)',
+                        },
+
+                        // Font family.
+                        fontFamily: {
+                            outfit: ["Outfit", 'sans-serif', 'system-ui'],
+                        }
+                    }
+                }
+            }
+        </script>
+
+    </head>
+
+    <body class="bg-white font-outfit">
+
+
+        <!-- 
+                                                    Header.
+            ===================================================================================
+        -->
+        <header></header>
+
+
+
+
+
+
+
+
+
+
+        <!-- 
+                                                    Main.
+            ===================================================================================
+        -->
+        <main class="flex justify-center">
+
+            <!-- Phone -->
+            <section>
+                <div class="mockup-phone">
+                    <div class="camera"></div>
+                    <div class="display">
+                        <div
+                            class="artboard artboard-demo w-auto lg:w-[28.125rem] h-auto lg:h-[58.25rem] py-36 lg:py-0 relative bg-login_bg shadow-none">
+
+                            <!-- 
+                                                Phone icon section.
+                                =====================================================
+                            -->
+                            <section class="absolute top-8 left-0 px-8 flex justify-between w-full text-base text-heading">
+                                <div>
+                                    <time datetime="">9:41</time>
+                                </div>
+                                <div class="flex gap-2">
+                                    <span><i class="fa-solid fa-signal"></i></span>
+                                    <span><i class="fa-solid fa-wifi"></i></span>
+                                    <span><i class="fa-solid fa-battery-full"></i></span>
+                                </div>
+                            </section>
+
+
+
+
+
+
+                            <!-- 
+                                                    Payoo section.
+                                =====================================================
+                            -->
+                            <section class="flex justify-center flex-col">
+
+                                <!-- Payoo logo. -->
+                                <div class="flex justify-center px-16">
+                                    <img src="media/images/full_logo.png" alt="Payoo logo" title="Payoo logos">
+                                </div>
+
+                                <!-- Payoo input. -->
+                                <div class="hero-content flex-col lg:flex-row-reverse">
+                                    <div class="card bg-base-100 w-full shrink-0">
+
+                                        <form class="card-body p-8 md:p-4 lg:p-[2rem]">
+
+                                            <div class="form-control">
+                                                <label class="label">
+                                                    <span class="label-text font-medium text-base text-heading">Mobile
+                                                        Number</span>
+                                                </label>
+                                                <input id="mobile_number_field" type="text" autocomplete="off"
+                                                    placeholder="Enter your number"
+                                                    class="input input-bordered rounded-[2rem] px-5 py-4 bg-input_field border-none"
+                                                    required />
+                                            </div>
+
+                                            <div class="form-control">
+                                                <label class="label">
+                                                    <span class="label-text font-medium text-base text-heading">4 Digit
+                                                        Pin</span>
+                                                </label>
+                                                <input id="pin_number_field" type="number"
+                                                    placeholder="Enter 4 Digit Pin"
+                                                    class="input input-bordered rounded-[2rem] px-5 py-4 bg-input_field border-none"
+                                                    required />
+                                                <label class="label">
+                                                </label>
+                                            </div>
+
+                                            <div class="form-control mt-6">
+                                                <button
+                                                    class="btn h-auto min-h-auto btn-primary bg-button border-button text-white font-semibold text-xl rounded-[2rem] px-5 py-4"
+                                                    id="login_button">Login</button>
+                                            </div>
+
+                                        </form>
+
+                                    </div>
+                                </div>
+
+                            </section>
+
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+
+        </main>
+
+
+
+
+
+
+
+
+
+
+        <!-- 
+                                                    Footer.
+            ===================================================================================
+        -->
+        <footer></footer>
+
+        <!-- Utilities JS -->
+        <script src="js/utilities.js"></script>
+
+        <!-- Login JS. -->
+        <script src="js/login.js"></script>
+
+        <!-- Font awesome kit. -->
+        <script src="https://kit.fontawesome.com/1bbb5634e6.js" crossorigin="anonymous"></script>
+
+    </body>
+
+</html>
