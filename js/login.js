@@ -16,6 +16,8 @@ document.getElementById('login_button')
 
         else {
             alert('Please give correct pin number or mobile number.');
+            
+            location.reload();
         }
 
     });
